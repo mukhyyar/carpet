@@ -14,7 +14,7 @@
 ! function(t, e) {
     "object" == typeof module && "object" == typeof module.exports ? module.exports = t.document ? e(t, !0) : function(t) {
         if (!t.document) throw new Error("jQuery requires a window with a document");
-        return e(t)
+        return e(t);
     } : e(t)
 }("undefined" != typeof window ? window : this, function(T, t) {
     var e = [],
@@ -29,13 +29,13 @@
         m = {},
         s = "2.2.4",
         S = function(t, e) {
-            return new S.fn.init(t, e)
+            return new S.fn.init(t, e);
         },
         o = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g,
         l = /^-ms-/,
         u = /-([\da-z])/gi,
         h = function(t, e) {
-            return e.toUpperCase()
+            return e.toUpperCase();
         };
 
     function p(t) {
@@ -49,10 +49,10 @@
         selector: "",
         length: 0,
         toArray: function() {
-            return c.call(this)
+            return c.call(this);
         },
         get: function(t) {
-            return null != t ? t < 0 ? this[t + this.length] : this[t] : c.call(this)
+            return null != t ? t < 0 ? this[t + this.length] : this[t] : c.call(this);
         },
         pushStack: function(t) {
             var e = S.merge(this.constructor(), t);

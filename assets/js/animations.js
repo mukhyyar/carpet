@@ -2319,7 +2319,8 @@
                         this.nav.removeClass("-visible"), e.navbar.addClass("-back"), r.default.slider.open(o).play(), setTimeout(function() {
                             o.find(".cb-preview").removeClass("-right"), e.navbar.addClass("-inverse").removeClass("-bw-lg"), setTimeout(function() {
                                 e.goTo({
-                                    url: "/projects/" + a + "/",
+									//mukhyyar inside url direction
+                                    url: "/carpet/" + a + "/",
                                     triggerLeave: !1
                                 })
                             }, 400)
@@ -2758,7 +2759,8 @@
                         }).addClass("-color-" + o + "-bg").addClass("-visible"), setTimeout(function() {
                             e.loaderFill.removeClass("-visible"), e.view.html(""), setTimeout(function() {
                                 e.goTo({
-                                    url: "/projects/" + o + "/",
+									//mukhyyar inside url direction
+                                    url: "/carpet/" + o + "/",
                                     triggerLeave: !1
                                 })
                             }, 200)
