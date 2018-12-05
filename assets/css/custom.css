@@ -5283,16 +5283,17 @@ ul {
 	.cb-container.-lg,
 	.cb-screenshot-section {
 		padding: 0 200px 0 50px;
+		    margin-top: 33px;
 	}
 	.cb-navbar-logo img { width: 100%;}
 	.logo-shield img { width: 100%;}
 	.sec-1-hd { font-size:45px; line-height: 75px;}
 	.fttimes { font-size: 30px; }
-	.datehd { font-size:30px;}
+	.datehd { font-size:28px;}
 	.datehd strong { font-size:32px;}
 	.timer { font-size:65px; }
 	.timer small { font-size:15px;}
-	.cb-text.-xl { font-size:20px; 	line-height: 27px}
+	.cb-text.-xl { font-size:20px; 	line-height: 22px}
 }
 
 @media (min-width:1600px) {
@@ -9925,7 +9926,7 @@ li:nth-child(2) {
 
 @media (min-width:1280px) {
 	.cb-featured-more {
-		bottom: 90px
+		bottom: 37px
 	}
 }
 
