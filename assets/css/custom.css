@@ -16177,3 +16177,87 @@ div#section_2 .red_svg {
     /* opacity: 3; */
     opacity: 0.5;
 }
+
+/* animation */
+
+
+.-in #white_svg path {
+  fill:white;
+  stroke:#fff; 
+  stroke-width:2;  
+  stroke-miterlimit:10;
+  stroke-dasharray: 1000; 
+  stroke-dashoffset: 1000; 
+  animation: white_svg 3s;
+  animation-delay: 0.5s;
+  animation-iteration-count: 1; 
+
+}
+
+@keyframes white_svg {
+  0%   { stroke-dashoffset: 1000;    fill:transparent;}
+  50%  {fill:transparent;}
+  100% {stroke-dashoffset: 0;         stroke-width:0;   }
+}
+.-in #red_svg path {
+  fill:#e83c3b;
+  stroke:#fff; 
+  stroke-width:2;  
+  stroke-miterlimit:10;
+  stroke-dasharray: 1000; 
+  stroke-dashoffset: 1000; 
+  animation: red_svg 3s;
+  animation-delay: 0.5s;
+  animation-iteration-count: 1; 
+
+}
+
+@keyframes red_svg {
+  0%   { stroke-dashoffset: 1000;     fill:transparent;}
+  50%  {fill:transparent;}
+  100% {stroke-dashoffset: 0;        stroke-width:0;   }
+}
+
+/*out css */
+
+.-out #white_svg path  {
+  fill:white;
+  stroke:#fff; 
+  stroke-width:2;  
+  stroke-miterlimit:10;
+  stroke-dasharray: 1000; 
+  stroke-dashoffset: 1000; 
+  animation: white_svg_out 0.5s;
+  animation-delay: 0.5s;
+  animation-iteration-count: 1; 
+
+}
+
+@keyframes white_svg_out {
+   0% {stroke-dashoffset: 0;    fill:white;      stroke-width:0;   }
+
+  50%  {fill:transparent;}
+   100%   { stroke-dashoffset: 1000;    fill:transparent;}
+}
+.-out #red_svg path  {
+  fill:#e83c3b;
+  stroke:#fff; 
+  stroke-width:2;  
+  stroke-miterlimit:10;
+  stroke-dasharray: 1000; 
+  stroke-dashoffset: 1000; 
+  animation: red_svg_out 0.5s;
+  animation-delay: 0.5s;
+  animation-iteration-count: 1; 
+
+}
+
+@keyframes red_svg_out {
+ 0% {stroke-dashoffset: 0;    fill:#e83c3b;      stroke-width:0;   }
+  50%  {fill:transparent;}
+  100%   { stroke-dashoffset: 1000;    fill:transparent;}
+
+}
+
+
+/* .svg_hide{fill:transparent;} */

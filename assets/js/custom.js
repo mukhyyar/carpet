@@ -22,8 +22,26 @@ var myFunction = function runNext() {
 			
         }, 1100); 
 		
+		$('#section_2 #white_svg path').addClass('white_svg');
+		$('#section_2 #red_svg path').addClass('red_svg');
+		
+		//remove class
+		$('#section_2 #white_svg path').removeClass('white_svg_out');
+		$('#section_2 #red_svg path').removeClass('red_svg_out');
+		
 		
 	}
+	else if ($("#section_2").hasClass("-out")){
+		$('#section_2 #white_svg path').addClass('white_svg_out');
+		$('#section_2 #red_svg path').addClass('red_svg_out');
+		
+		//remove class
+		$('#section_2 #white_svg path').removeClass('white_svg');
+		$('#section_2 #red_svg path').removeClass('red_svg');
+	}
+	
+	
+	
 	else if ($("#section_3").hasClass("-in")){
 		setTimeout(function() {
              $( ".cb-navbar-logo img" ).attr('src','assets/img/header/logo_white.png');
